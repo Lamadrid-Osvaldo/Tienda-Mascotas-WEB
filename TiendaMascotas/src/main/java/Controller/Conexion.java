@@ -13,13 +13,13 @@ public class Conexion {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 
 			// Establecer la conexión
-			connection = DriverManager.getConnection(
-					"jdbc:mysql://localhost:3306/bd_tienda_mascotas?useSSL=false&serverTimezone=UTC","root","2556229");
+		/*connection = DriverManager.getConnection(
+					"jdbc:mysql://localhost:3306/bd_tienda_mascotas?useSSL=false&serverTimezone=UTC","root","2556229");*/
 			
-			/*connection = DriverManager.getConnection(
+			connection = DriverManager.getConnection(
 				    "jdbc:mysql://localhost:3306/bd_tienda_mascotas?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC",
 				    "root",
-				    "2556229"*/
+				    "2556229");
 				
 
 
