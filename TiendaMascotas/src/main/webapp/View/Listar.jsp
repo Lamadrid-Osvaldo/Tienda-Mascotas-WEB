@@ -14,6 +14,7 @@
     <div class="d-flex justify-content-between align-items-center mb-4">
       <h2 class="text-primary">📋 Lista de Tipos de Mascota</h2>
       <a href="SvTipoMascotas?accion=crear" class="btn btn-success">➕ Crear nuevo registro</a>
+      <a href="SvTipoMascotas?accion=crearpdf" class="btn btn-success" target="_blank">➕ Generar reporte</a>
     </div>
 
     <div class="table-responsive">

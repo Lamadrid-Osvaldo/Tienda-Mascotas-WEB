@@ -34,7 +34,7 @@
           <a href="SvTipoMascotas?accion=crear" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
             ➕ Crear nuevo registro
             <span class="badge badge-warning badge-pill">Nuevo</span>
-          </a>
+          </a> 
         </div>
       </div>
     </div>

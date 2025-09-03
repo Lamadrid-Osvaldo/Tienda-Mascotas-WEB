@@ -60,6 +60,23 @@ public class SvTipoMascotas extends HttpServlet {
 		    }
 		    response.sendRedirect("SvTipoMascotas?accion=listar");
 		}
+		else if ("crearpdf".equals(accion)) {
+			
+			response.setContentType("application/pdf");
+	        response.setHeader("Content-Disposition", "inline; filename=tipos_mascotas.pdf");
+			
+	        TipoMascotaDAO tm = new TipoMascotaDAO();
+	        
+	        try {
+	        	tm.generarpdf(response.getOutputStream());
+	        	
+				
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+	        
+	        
+		}
 
 
 		
