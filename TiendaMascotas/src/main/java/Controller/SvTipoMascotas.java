@@ -27,7 +27,38 @@ public class SvTipoMascotas extends HttpServlet {
 		super();
 	}
 
-	@Override
+		/*Servlet encargado de gestionar todas las operaciones relacionadas con la entidad TipoMascotas.
+		 * 
+		 * Este controlador centraliza las acciones CRUD y la generacion de documentos PDF.
+		 * Recibe peticiones mediante los parametros enviados atravez de de las vistas .JSP.
+		 * 
+		 * doGet:
+		 * -Accion-> listar: Trae el objeto lista que contiene los registros de una tabla y los manda al Listar.JSP.
+		 * 
+		 * -Accion-> crear: Redirige al formulario de creacion (Crear.jsp).
+		 * 
+		 * -Accion-> editar: Busca un registro por ID y redirige al formulario (Editar.JSP) para ser modificado.
+		 * 
+		 * -Accion-> eliminar: Elimina un registro segun el ID recibido y redirige al listado.
+		 * 
+		 * -Accion-> crearpdf: Genera un documento PDF con los registros de una tabla.
+		 * 
+		 * 
+		 * - doPost():
+		 *  -Accion-> create → recibe datos del formulario y guarda un nuevo registro en la base de datos.
+		 *  
+		 *  -Accion-> editar → recibe los datos actualizados de un registro y los guarda en la base de datos.
+		 *
+		 * Respuestas:
+		 *  - Redirige o reenvía a las vistas JSP correspondientes.
+		 *  
+		 *  - Genera un archivo PDF que se envía directamente al navegador.
+		 *
+		 * En caso de errores (conexión, SQL o parámetros inválidos), se captura la excepción y se imprime en consola.
+		 *  
+		 *  */
+	
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
@@ -75,15 +106,8 @@ public class SvTipoMascotas extends HttpServlet {
 				e.printStackTrace();
 			}
 	        
-	        
 		}
-
-
-		
-		
-		
-		
-	
+	 
 	}
 
 	@Override
